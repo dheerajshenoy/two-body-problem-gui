@@ -24,4 +24,4 @@ describing the motion of one of the body with respect to the other.
 
 # TODO
 
-Check (TODO)[TODO.md]
+Check [TODO](TODO.md)
