@@ -1,5 +1,5 @@
 # two-body-problem-gui
-A GUI program written in Python to play around with parameters with ease in a two body problem
+A GUI program written in Python to play around with parameters with ease in a two body problem.
 
 # Libraries Used
 
@@ -10,7 +10,7 @@ A GUI program written in Python to play around with parameters with ease in a tw
 
 # How to run the program ?
 
-Just execute `python plot_gui_multiple.py`.
+Just execute `python plot_gui_multiple.py` or `python plot_gui.py` for the initial v1.0 version.
 
 # Why are there two programs ?
 
@@ -24,4 +24,4 @@ describing the motion of one of the body with respect to the other.
 
 # TODO
 
-Check [](TODO.md)
+Check (TODO)[TODO.md]
