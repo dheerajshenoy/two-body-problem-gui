@@ -3,4 +3,4 @@ A GUI program written in Python to play around with parameters with ease in a tw
 
 # Screenshot
 
-!()[Screenshots/pic1.png]
+![](Screenshots/pic1.png)
