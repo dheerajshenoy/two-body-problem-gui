@@ -1,6 +1,11 @@
 # two-body-problem-gui
 A GUI program written in Python to play around with parameters with ease in a two body problem.
 
+# Installation
+
+Run `pip install -r requirements.txt` to download the necessary libraries. Then run either `plot_gui_multiple.py` or `plot_gui.py`.
+The difference between the two has been discussed below. 
+
 # Libraries Used
 
 1. PyQt6
