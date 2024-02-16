@@ -113,12 +113,14 @@ class MainWindow(QMainWindow):
         self.ax.set_zticklabels([])
         self.ax.set_axis_off()
         self.ax.grid(False)
+        self.ax.set_title("Non-inertial frame of reference")
 
         self.ax2.set_xticklabels([])
         self.ax2.set_yticklabels([])
         self.ax2.set_zticklabels([])
         self.ax2.set_axis_off()
         self.ax2.grid(False)
+        self.ax2.set_title("Center of Gravity frame of reference", x = .7, y = -0.1)
 
         self.timer = QtCore.QTimer()
         self.timer.setInterval(10)
@@ -341,7 +343,7 @@ class MainWindow(QMainWindow):
             self.ax2.scatter(self.t1_sol[self.num, 0], self.t1_sol[self.num, 1], self.t1_sol[self.num, 2], c= self.tb_col1, marker='o', s=self.radius1)
             self.ax2.scatter(self.t2_sol[self.num, 0], self.t2_sol[self.num, 1], self.t2_sol[self.num, 2], c=self.tb_col2, marker='o', s=self.radius2)
             self.ax2.scatter(self.t3_sol[self.num, 0], self.t3_sol[self.num, 1], self.t3_sol[self.num, 2], c=self.tb_col3, marker='o', s=self.radius3)
-            self.ax2.set_title("Center of Gravity frame of reference", x = .55, y = -0.1)
+            self.ax2.set_title("Center of Gravity frame of reference", x = .7, y = -0.1)
 
             if self.origin_shown:
                 self.ax.scatter(self.r1_sol[0, 0], self.r1_sol[0, 1], self.r1_sol[0, 2], c='black', marker='o', s=50)
@@ -532,7 +534,7 @@ class MainWindow(QMainWindow):
         msg = QMessageBox(self)
         msg.setStyleSheet(msgbox_stylesheet)
         msg.setIcon(QMessageBox.Icon.Information)
-        msg.setText("Two and three body simulation program written in Python using Matplotlib and Qt library.\n\nCode by: V DHEERAJ SHENOY")
+        msg.setText("Two and three body simulation program written in Python.\n\nCode by: V DHEERAJ SHENOY")
         msg.show()
 
     def toggle_sidebar(self):
